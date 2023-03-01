@@ -1,12 +1,10 @@
-import { Navbar, Welcome } from "./components";
+import { Homepage, Navbar, Welcome } from "./components";
 
 const App = () => {
   const onButtonClick = () => {
     return (
       <div className="min-h-screen">
-        <div className="gradient-bg-welcome">
-          <Welcome />
-        </div>
+        <a href="https://imgur.com/gallery/Mo4OIF8"></a>
       </div>
     );
   };
@@ -15,14 +13,12 @@ const App = () => {
     <div className="App">
       <div>
         <Navbar />
+        <Homepage />
       </div>
-      <h1>Hello World</h1>
-      <p>
-        Hello there.
-        <br />
-        How do you do?
-      </p>
-      <button onClick={onButtonClick}>Click Me</button>
+      <Welcome />
+      <button type="button" onClick={onButtonClick}>
+        Click Me
+      </button>
     </div>
   );
 };

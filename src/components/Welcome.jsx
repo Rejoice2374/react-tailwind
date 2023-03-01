@@ -1,8 +1,9 @@
 const user = {
   name: "Rejoice Adeboye",
-  imageUrl: "https://imgur.com/a/Mo4OIF8",
+  imageUrl: "https://imgur.com/gallery/Mo4OIF8",
   imageSize: 90,
 };
+
 const Welcome = () => {
   return (
     <>
