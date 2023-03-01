@@ -10,8 +10,8 @@ const Welcome = () => {
       <h1>{user.name}</h1>
       <img
         className="avatar"
-        src="{user.imageUrl}"
-        alt="{'This is ' + user.name}"
+        src={user.imageUrl}
+        alt={"This is " + user.name}
         style={{
           width: user.imageSize,
           height: user.imageSize,

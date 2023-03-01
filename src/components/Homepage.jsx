@@ -1,4 +1,3 @@
-import { loader } from "./";
 import Hero from "./game.png";
 
 const Homepage = () => {

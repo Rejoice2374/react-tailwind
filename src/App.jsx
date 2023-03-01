@@ -1,14 +1,6 @@
 import { Homepage, Navbar, Welcome } from "./components";
 
 const App = () => {
-  const onButtonClick = () => {
-    return (
-      <div className="min-h-screen">
-        <a href="https://imgur.com/gallery/Mo4OIF8"></a>
-      </div>
-    );
-  };
-
   return (
     <div className="App">
       <div>
