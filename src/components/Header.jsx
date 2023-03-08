@@ -1,6 +1,6 @@
 import Hero from "./game.png";
 
-const Homepage = () => {
+const Header = () => {
   return (
     <section className="hero">
       {/** Flex Container */}
@@ -30,4 +30,4 @@ const Homepage = () => {
   );
 };
 
-export default Homepage;
+export default Header;

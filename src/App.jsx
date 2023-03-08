@@ -1,16 +1,14 @@
-import { Homepage, Navbar, Welcome } from "./components";
+import { Header, Navbar, Welcome, Features } from "./components";
 
 const App = () => {
   return (
     <div className="App">
       <div>
         <Navbar />
-        <Homepage />
+        <Header />
       </div>
+      <Features />
       <Welcome />
-      <button type="button" onClick={onButtonClick}>
-        Click Me
-      </button>
     </div>
   );
 };
