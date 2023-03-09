@@ -1,4 +1,5 @@
 import Logo from "./Images/logo2.png";
+import UilReact from "@iconscout/react-unicons/icons/uil-react";
 
 const Navbar = () => {
   return (
