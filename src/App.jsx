@@ -1,4 +1,11 @@
-import { Header, Navbar, Welcome, Features } from "./components";
+import {
+  Header,
+  Navbar,
+  CTA,
+  Features,
+  Testimonial,
+  Footer,
+} from "./components";
 
 const App = () => {
   return (
@@ -8,7 +15,9 @@ const App = () => {
         <Header />
       </div>
       <Features />
-      <Welcome />
+      <Testimonial />
+      <CTA />
+      <Footer />
     </div>
   );
 };

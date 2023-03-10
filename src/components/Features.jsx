@@ -98,13 +98,4 @@ const Features = () => {
   );
 };
 
-const Testimonial = () => {
-  return (
-    <section>
-      
-    </section>
-  );
-};
-
 export default Features;
-export default Testimonial;
