@@ -10,12 +10,14 @@ import {
 const App = () => {
   return (
     <div className="App">
-      <div>
+      <div className="Beginning">
         <Navbar />
         <Header />
       </div>
-      <Features />
-      <Testimonial />
+      <div className="Central">
+        <Features />
+        <Testimonial />
+      </div>
       <CTA />
       <Footer />
     </div>
