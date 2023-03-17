@@ -3,26 +3,26 @@ import { UilListUl } from '@iconscout/react-unicons'
 import { UilMultiply } from '@iconscout/react-unicons'
 
 // show/hide nav menu
-const openBtn = document.getElementById('open-menu-btn')
-const closeBtn = document.getElementById('close-menu-btn')
-const nav = document.getElementById('menu')
+const openBtn = document.getElementById('open-menu-btn');
+const closeBtn = document.getElementById('close-menu-btn');
+const nav = document.getElementById('menu');
 
 const openNav = () => {
     nav.style.display = "flex";
     closeBtn.style.display = "inline-block";
     openBtn.style.display = "none";
-}
+};
 
 openBtn.addEventListener('click', openNav
-)
+);
 
 const closeNav = () => {
     nav.style.display = "none";
     openBtn.style.display = "inline-block";
     closeBtn.style.display = "none";
-}
+};
 
-closeBtn.addEventListener('click', closeNav)
+closeBtn.addEventListener('click', closeNav);
 
 
 const Navbar = () => {
@@ -76,7 +76,7 @@ const Navbar = () => {
       {/** Mobile Menu */}
       <div className="md:hidden">
         <div id="menu" className="absolute flex flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:auto sm:self-center left-6 right-6 drop-shadow-md">
-        <a href="#" className="hover:text-darkGrayishBlue">
+          <a href="#" className="hover:text-darkGrayishBlue">
             Home
           </a>
           <a href="#" className="hover:text-darkGrayishBlue">
