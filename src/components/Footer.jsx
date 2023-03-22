@@ -17,7 +17,7 @@ const Footer = () => {
           </div>
           {/** Logo */}
           <div>
-            <img src={Logo} class="w-36" alt="" />
+            <img src={Logo} className="w-36" alt="" />
           </div>
 
           {/** Social LInks container */}

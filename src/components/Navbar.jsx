@@ -1,33 +1,10 @@
+import { useState } from "react";
 import Logo from "./Images/logo2.png";
 import { UilListUl } from "@iconscout/react-unicons";
 import { UilMultiply } from "@iconscout/react-unicons";
 
-// show/hide nav menu
-const openBtn = document.getElementById("open-menu-btn");
-const closeBtn = document.getElementById("close-menu-btn");
-const nav = document.getElementById("menu");
-
-const openNav = () => {
-  nav.style.display = "flex";
-  closeBtn.style.display = "inline-block";
-  openBtn.style.display = "none";
-};
-
-if (openBtn) {
-  openBtn.addEventListener("click", openNav);
-}
-
-const closeNav = () => {
-  nav.style.display = "none";
-  openBtn.style.display = "inline-block";
-  closeBtn.style.display = "none";
-};
-
-if (closeBtn) {
-  closeBtn.addEventListener("click", closeNav);
-}
-
 const Navbar = () => {
+  const [toggleMenu, setToggleMenu] = useState(false);
   return (
     <nav className="relative container mx-auto p-6">
       {/* flex container */}
@@ -39,68 +16,63 @@ const Navbar = () => {
 
         {/*menu itmes */}
         <div className="hidden md:flex space-x-12">
-          <a href="#" className="hover:text-darkGrayishBlue">
+          <a href="./Welcome.jsx" className="hover:text-darkGrayishBlue">
             Home
           </a>
-          <a href="#" className="hover:text-darkGrayishBlue">
+          <a href="./Welcome.jsx" className="hover:text-darkGrayishBlue">
             Games
           </a>
-          <a href="#" className="hover:text-darkGrayishBlue">
+          <a href="./Welcome.jsx" className="hover:text-darkGrayishBlue">
             About Us
           </a>
-          <a href="#" className="hover:text-darkGrayishBlue">
+          <a href="./Welcome.jsx" className="hover:text-darkGrayishBlue">
             Contact Us
           </a>
-          <a href="#" className="hover:text-darkGrayishBlue">
+          <a href="./Welcome.jsx" className="hover:text-darkGrayishBlue">
             Community
           </a>
         </div>
 
         {/** Button */}
         <a
-          href="#"
+          href="./Welcome.jsx"
           className="hidden md:block p-3 px-6 pt-2 text white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
         >
           Get Started
         </a>
-
-        {/** Hamburger Icon */}
-        <button
-          id="open-menu-btn"
-          className="block md:hidden focus:outline-none"
-        >
-          <UilListUl className="hamburger" color="black" />
-        </button>
-
-        <button
-          id="close-menu-btn"
-          className="block md:hidden focus:outline-none"
-        >
-          <UilMultiply className="hamburger" color="black" />
-        </button>
-      </div>
-
-      {/** Mobile Menu */}
-      <div className="md:hidden">
-        <div
-          id="menu"
-          className="absolute flex flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:auto sm:self-center left-6 right-6 drop-shadow-md"
-        >
-          <a href="#" className="hover:text-darkGrayishBlue">
-            Home
-          </a>
-          <a href="#" className="hover:text-darkGrayishBlue">
-            Games
-          </a>
-          <a href="#" className="hover:text-darkGrayishBlue">
-            About Us
-          </a>
-          <a href="#" className="hover:text-darkGrayishBlue">
-            Contact Us
-          </a>
-          <a href="#" className="hover:text-darkGrayishBlue">
-            Community
-          </a>
+        <div className="md:hidden">
+          {toggleMenu ? (
+            <UilMultiply
+              className="hamburger"
+              onClick={() => setToggleMenu(false)}
+            />
+          ) : (
+            <UilListUl
+              className="hamburger"
+              onClick={() => setToggleMenu(true)}
+            />
+          )}
+          {toggleMenu && (
+            <div>
+              <div className="absolute flex flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:auto sm:self-center left-6 right-6 drop-shadow-md">
+                <a href="./Welcome.jsx" className="hover:text-darkGrayishBlue">
+                  Home
+                </a>
+                <a href="./Welcome.jsx" className="hover:text-darkGrayishBlue">
+                  Games
+                </a>
+                <a href="./Welcome.jsx" className="hover:text-darkGrayishBlue">
+                  About Us
+                </a>
+                <a href="./Welcome.jsx" className="hover:text-darkGrayishBlue">
+                  Contact Us
+                </a>
+                <a href="./Welcome.jsx" className="hover:text-darkGrayishBlue">
+                  Community
+                </a>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </nav>
