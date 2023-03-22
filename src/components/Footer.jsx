@@ -23,27 +23,27 @@ const Footer = () => {
           {/** Social LInks container */}
           <div className="flex justify-center space-x-4">
             {/** Link 1 */}
-            <a href="#">
+            <a href="./Welcome.jsx">
               <UilTwitter className="h-8" color="white" />
             </a>
 
             {/** Link 2 */}
-            <a href="#">
+            <a href="./Welcome.jsx">
               <UilServer className="h-8" color="white" />
             </a>
 
             {/** Link 3 */}
-            <a href="#">
+            <a href="./Welcome.jsx">
               <UilFacebookF className="h-8" color="white" />
             </a>
 
             {/** Link 4 */}
-            <a href="#">
+            <a href="./Welcome.jsx">
               <UilYoutube className="h-8" color="white" />
             </a>
 
             {/** Link 5 */}
-            <a href="#">
+            <a href="./Welcome.jsx">
               <UilInstagram className="h-8" color="white" />
             </a>
           </div>
@@ -52,28 +52,28 @@ const Footer = () => {
         {/** List Container */}
         <div className="flex justify-around space-x-32">
           <div className="flex flex-col space-y-3 text-white">
-            <a href="#" className="hover:text-brightRed">
+            <a href="./Welcome.jsx" className="hover:text-brightRed">
               Home
             </a>
-            <a href="#" className="hover:text-brightRed">
+            <a href="./Welcome.jsx" className="hover:text-brightRed">
               Pricing
             </a>
-            <a href="#" className="hover:text-brightRed">
+            <a href="./Welcome.jsx" className="hover:text-brightRed">
               Product
             </a>
-            <a href="#" className="hover:text-brightRed">
+            <a href="./Welcome.jsx" className="hover:text-brightRed">
               About
             </a>
           </div>
 
           <div className="flex flex-col space-y-3 text-white">
-            <a href="#" className="hover:text-brightRed">
+            <a href="./Welcome.jsx" className="hover:text-brightRed">
               Carrers
             </a>
-            <a href="#" className="hover:text-brightRed">
+            <a href="./Welcome.jsx" className="hover:text-brightRed">
               Community
             </a>
-            <a href="#" className="hover:text-brightRed">
+            <a href="./Welcome.jsx" className="hover:text-brightRed">
               Privacy Policy
             </a>
           </div>
